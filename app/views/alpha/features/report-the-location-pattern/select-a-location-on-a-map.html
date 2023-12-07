@@ -14,16 +14,16 @@ href: "javascript:window.history.back()"
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
     <span class="govuk-caption-xl">
       Help users to
     </span>
     <h1 class="govuk-heading-l">
-      Make a declaration
+      Report a location using a map
     </h1>
 
     <P>
-      Help users to tell you that they have understood or agree to something before they submit an application or an
-      online form. This is known as a ‘declaration’.
+      Use an interactive map to allow users to select a location and retrieves the coordinates of the selected location.
     </P>
 
 
@@ -35,11 +35,13 @@ href: "javascript:window.history.back()"
 
       <div class="govuk-details__text">
         <ul>
-          <p class="govuk-body" style="font-weight: 600" ;="">As a form designer, I need the ability to:</p>
+          <p class="govuk-body" style="font-weight: 600" ;="">The ability:</p>
           <ul class="govuk-list govuk-list--bullet">
-            <li>add a declaration to the bottom of 'Check your answer pages'</li>
-            <li>create a seperate page for users to accept a declaration</li>
-            <li>add text to the declaration that can be formatted using HTML markup e.g., bullet lists and headings</li>
+            <li>to select a location on an interactive map</li>
+            <li>to move the map to explore different areas</li>
+            <li>for users to confirm the accuracy of the pin's location</li>
+            <li>for grid references to be captured</li>
+            <li>for city, postcode/road information to be captured</li>
           </ul>
         </ul>
       </div>
@@ -55,8 +57,8 @@ href: "javascript:window.history.back()"
 
     <div class="govuk-form-group govuk-!-margin-bottom-7">
       <h3 class="govuk-heading-m govuk-!-margin-bottom-2">
-        <a href="http://www.figma.com/file/Y6Xf7WNayx3ZsAej4P8Dyz/Add-a-declaration-page-type_pattern_v1?type=design&node-id=960-97850&mode=design&t=KGczMWU4wPlmAsNm-4"
-          class="govuk-link govuk-link--no-visited-state" target="_blank">Version 2.1 (opens in new
+        <a href="https://www.figma.com/proto/WFATVk4WLUzeR1fxzg1ONX/Report-the-location_pattern_v1?page-id=562%3A40803&type=design&node-id=610-95259&viewport=-16206%2C-63%2C0.3&t=pcZQ21P94gvNAZdX-8&scaling=scale-down-width&starting-point-node-id=562%3A95256&show-proto-sidebar=1&hide-ui=1"
+          class="govuk-link govuk-link--no-visited-state" target="_blank">Version 1.1 (opens in new
           tab)</a>
         <span class="govuk-tag govuk-tag--purple" style="margin-left: 10px;">in progress</span>
       </h3>
@@ -83,24 +85,12 @@ href: "javascript:window.history.back()"
               <!-- WHAT WE'VE DONE -->
 
               <tr class="govuk-table__row">
-                <td class="govuk-table__cell">Removed characted limit to declaration text</td>
+                <td class="govuk-table__cell">Added address lookup feature</td>
 
                 <!-- WHY WE DID IT -->
 
                 <td class="govuk-table__cell">
-                  <p>In the case of the XL Bully form, the policy team insisted on a large
-                    declaration to users. The GOV.UK Form builder has a 2000 character limit.</p>
-                  <p>
-                    This resulted in having an extra long 'check your answers' page as there can be up to 40 questions
-                    and
-                    the declaration is added underneath.
-                  </p>
-
-                  <p>
-                    Ideally for large forms we'd have declaration page that's shown either before or after the check
-                    your answers page.
-                  </p>
-
+                  <p>So users can set the initial view of the map to a location of their choosing.</p>
                 </td>
                 <td class="govuk-table__cell">
 
@@ -118,13 +108,11 @@ href: "javascript:window.history.back()"
 
               <!-- ADD NEW ROW HERE       -->
               <tr class="govuk-table__row">
-                <td class="govuk-table__cell">Added the ability to change checkbox label titles when creating the
-                  declaration component pattern.</td>
+                <td class="govuk-table__cell">Ability to set the initial view to your current GPS location</td>
 
                 <!-- WHY WE DID IT -->
 
-                <td class="govuk-table__cell">To avoid conflicts with page button labels and allows form designers to
-                  adapt content to specific types of declarations</td>
+                <td class="govuk-table__cell">To allow users that are at the location to quickly access their GPS coordinates on the map</td>
                 <td class="govuk-table__cell">
 
                   <!-- LINKS -->
@@ -139,6 +127,51 @@ href: "javascript:window.history.back()"
                 </td>
               </tr>
               </tr>
+
+                   <!-- ADD NEW ROW HERE       -->
+                   <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Show the location of the pin semantically, below the map</td>
+    
+                    <!-- WHY WE DID IT -->
+    
+                    <td class="govuk-table__cell">To avoid using innaccessible map overlays</td>
+                    <td class="govuk-table__cell">
+    
+                      <!-- LINKS -->
+    
+                      <!-- <strong>Figma files</strong>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li><a
+                            href="http://www.figma.com/file/Y6Xf7WNayx3ZsAej4P8Dyz/Add-a-declaration-page-type_pattern_v1?type=design&node-id=960-97850&mode=design&t=KGczMWU4wPlmAsNm-4/"
+                            class="govuk-link" target="_blank">Link (opens in new
+                            tab)</a></li>
+                      </ul> -->
+                    </td>
+                  </tr>
+                  </tr>
+
+                      <!-- ADD NEW ROW HERE       -->
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Give users the chance to double check that their selection is as they've intended</td>
+        
+                        <!-- WHY WE DID IT -->
+        
+                        <td class="govuk-table__cell">To help users have confidence in their answers by showing them a page with their selection and the opportunity to change it before carrying on</td>
+                        <td class="govuk-table__cell">
+        
+                          <!-- LINKS -->
+<!--         
+                          <strong>Figma files</strong>
+                          <ul class="govuk-list govuk-list--bullet">
+                            <li><a
+                                href="http://www.figma.com/file/Y6Xf7WNayx3ZsAej4P8Dyz/Add-a-declaration-page-type_pattern_v1?type=design&node-id=960-97850&mode=design&t=KGczMWU4wPlmAsNm-4/"
+                                class="govuk-link" target="_blank">Link (opens in new
+                                tab)</a></li>
+                          </ul> -->
+                        </td>
+                      </tr>
+                      </tr>
+                  
 
             </tbody>
           </table>
