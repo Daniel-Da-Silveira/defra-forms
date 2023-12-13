@@ -3,6 +3,12 @@ For guidance on how to use layouts see:
 https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
-
-
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="/public/javascripts/application.js"></script>
+  <script src="/public/javascripts/all.js"></script>
+  <script src="/public/javascripts/applicationnew.js"></script>
+  <script src="/public/javascripts/showPassword.js"></script>
+{% endblock %}
