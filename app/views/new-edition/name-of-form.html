@@ -1,0 +1,46 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<!-- <main class="govuk-main-wrapper" id="main-content" role="main"> -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/forms/new" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token"
+          value="DCj77PqjaLQQn2b1t4QpG_ZUfS9RRedR73NP21D_cYOJiVI1qg2THE8d2VImErxQB_s3UcnM7mlkSzPtCCyn3A"
+          autocomplete="off">
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label for="forms-change-name-form-name-field"
+              class="govuk-label govuk-label--l">Enter a name for your form</label></h1>
+          <input id="forms-change-name-form-name-field" class="govuk-input"
+
+    </div>
+  </div>
+
+
+
+
+<form class="form" action="/path/of/next/page" method="post">
+
+
+  {{ govukButton({
+  text: "Continue"
+  }) }}
+
+</form>
+
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<!-- <main class="govuk-main-wrapper" id="main-content" role="main"> -->
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you want to duplicate an existing form?
+            </h1>
+          </legend>
+
+          <form class="form" action="/new-edition/duplicate-answer.html" method="submit">
+
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="duplicateAnswer" name="duplicateQuestion" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="duplicateAnswer">
+                Yes, duplicate an existing form
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="duplicateAnswer2" name="duplicateAnswer" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="duplicateAnswer">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+  {{ govukButton({
+  text: "Continue"
+  }) }}
+
+</form>
+
+</div>
+</div>
+
+{% endblock %}
