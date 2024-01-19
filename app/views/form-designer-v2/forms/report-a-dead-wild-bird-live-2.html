@@ -112,6 +112,7 @@ href: "javascript:window.history.back()"
   </div>
 </div>
 
+<form class="form" action="/new-edition/duplicate-form-question" method="post">
 
 <table class="govuk-table">
   <thead class="govuk-table__head">
@@ -121,13 +122,15 @@ href: "javascript:window.history.back()"
 
     </div>
 
+
+
     </div>
     <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header" style="width:23%!important;">Form name</th>
-      <th scope="col" class="govuk-table__header" style="width:23%!important;">Created by</th>
-      <th scope="col" class="govuk-table__header" style="width:23%!important;">Last edited by</th>
-      <th scope="col" class="govuk-table__header" style="width:23%!important;">Status</th>
-      <th scope="col" class="govuk-table__header" style="width:10%!important;">Action</th>
+      <th scope="col" class="govuk-table__header" syle="width:23%!important;">Form name</th>
+      <th scope="col" class="govuk-table__header" styl="width:23%!important;">Created by</th>
+      <th scope="col" class="govuk-table__header" stle="width:23%!important;">Last edited by</th>
+      <th scope="col" class="govuk-table__header" stye="width:23%!important;">Status</th>
+      <!-- <th scope="col" class="govuk-table__header" style="width:10%!important;">Action</th> -->
 
     </tr>
   </thead>
@@ -135,6 +138,7 @@ href: "javascript:window.history.back()"
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Report a dead wild bird
           - version 6</a></td>
+          
       <td class="govuk-table__cell">Steven Thomas</td>
       <td class="govuk-table__cell">Anna Scott on 15 Decemeber 2023</td>
       <td class="govuk-table__cell">
@@ -142,12 +146,10 @@ href: "javascript:window.history.back()"
           draft
         </div>
         <!-- <span class="govuk-!-margin-bottom-2 govuk-!-margin-top-2" style="display: block">and</span> -->
-        <div class="govuk-tag govuk-tag--purple"style="govuk-!-margin-bottom-2">
-          Testing
-        </div>
+<!--
 
       <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td>
-      </td>
+      </td> -->
 
     </tr>
 
@@ -160,7 +162,7 @@ href: "javascript:window.history.back()"
         <div class="govuk-tag govuk-tag--pink">
           withdrawn
         </div>
-      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td>
+      <!-- <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td> -->
     </tr>
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Report a dead wild bird
@@ -168,10 +170,10 @@ href: "javascript:window.history.back()"
       <td class="govuk-table__cell">Lorenzo Pagani</td>
       <td class="govuk-table__cell">James Smithy on 10 November 2023</td>
       <td class="govuk-table__cell">
-        <div class="govuk-tag govuk-tag--grey">
-          archived
+        <div class="govuk-tag govuk-tag--orange">
+          draft
         </div>
-      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td>
+      <!-- <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td> -->
     </tr>
     <tr class="govuk-table__row">
       <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Report a dead wild bird
@@ -179,10 +181,10 @@ href: "javascript:window.history.back()"
       <td class="govuk-table__cell">Anna Scott</td>
       <td class="govuk-table__cell">Steven Thomas on 1 November 2023</td>
       <td class="govuk-table__cell">
-        <div class="govuk-tag govuk-tag--grey">
-          archived
+        <div class="govuk-tag govuk-tag--orange">
+          draft
         </div>
-      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td>
+      <!-- <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Copy</a></td> -->
     </tr>
     <!-- <tr class="govuk-table__row">
           <td class="govuk-table__cell"><a href="#" class="govuk-link">Report food poisining</a></td>
@@ -230,5 +232,9 @@ href: "javascript:window.history.back()"
 </table>
 </div>
 </div>
+
+</form>
+
+
 
 {% endblock %}

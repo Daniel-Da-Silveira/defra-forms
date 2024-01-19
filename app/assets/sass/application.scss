@@ -1,7 +1,7 @@
 //
 // For guidance on how to add CSS and SCSS see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
+//
 
 // Add extra styles here
 
@@ -46,7 +46,7 @@
       color: #000000;
     }
   }
-  
+
   .login-nav__list {
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@
     display: block;
     clear: both;
   }
-  
+
   .login-nav__list-item {
     position: relative;
     margin-bottom: 5px;
@@ -67,7 +67,7 @@
     padding-left: 0;
     float: left;
   }
-  
+
   .login-nav__list-item-new {
     position: relative;
     margin-bottom: 5px;
@@ -76,29 +76,29 @@
     float: left;
     border-right: 1px solid #b1b4b6;
   }
-  
+
   .login-nav__list-item-new:first-child {
     padding-left: 0;
   }
-  
+
   .login-nav__list-item-new:last-child {
     padding-right: 0;
     border-right: none;
   }
-  
+
   #profile .profile, #account .account {
     text-decoration: none;
     font-weight: 600;
   }
-  
+
   .login-nav__link {
     margin-right: 5px;
   }
-  
+
   .login-nav__link-new {
     margin-right: 0;
   }
-  
+
   .login-nav__details {
     font-family: "GDS Transport", arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -140,7 +140,7 @@
       color: #000000;
     }
   }
-  
+
   /*** Small viewports ***/
   @media all and (max-width: 40.0625em) {
     .login-nav__details {
@@ -5749,7 +5749,7 @@
 }
 
 .gem-c-search--on-govuk-blue .gem-c-search__submit {
-  background-color: #0b0c0c;
+  background-color: red;
   color: #fff
 }
 
@@ -5762,7 +5762,7 @@
 }
 
 .gem-c-search--homepage .gem-c-search__submit {
-  background-color: #d2e2f1;
+  background-color: red;
   color: #1d70b8
 }
 
@@ -5771,7 +5771,7 @@
 }
 
 .gem-c-search--on-white .gem-c-search__submit {
-  background-color: #1d70b8;
+  background-color: red;
   color: #fff
 }
 
